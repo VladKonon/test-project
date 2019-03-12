@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="insert_1" author="OSDB">
+        <insert tableName="project">
+            <column name="name" value="test project1" />
+            <column name="description" value="test description1" />
+            <column name="created_at" value="2019-02-08 17:51:14" />
+        </insert>
+        <insert tableName="project">
+            <column name="name" value="test project2" />
+            <column name="description" value="test description2" />
+            <column name="created_at" value="2019-02-08 17:51:14" />
+        </insert>
+        <insert tableName="project">
+            <column name="name" value="test project3" />
+            <column name="description" value="test description3" />
+            <column name="created_at" value="2019-02-08 17:51:14" />
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_2" author="OSDB">
+        <insert tableName="task_priority">
+            <column name="name" value="Minor" />
+        </insert>
+        <insert tableName="task_priority">
+            <column name="name" value="Normal" />
+        </insert>
+        <insert tableName="task_priority">
+            <column name="name" value="Urgent" />
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_3" author="OSDB">
+        <insert tableName="task_status">
+            <column name="name" value="Not Started" />
+        </insert>
+        <insert tableName="task_status">
+            <column name="name" value="In Progress" />
+        </insert>
+        <insert tableName="task_status">
+            <column name="name" value="Completed" />
+        </insert>
+        <insert tableName="task_status">
+            <column name="name" value="Late" />
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_4" author="OSDB">
+        <insert tableName="task">
+            <column name="name" value="task1.1" />
+            <column name="description" value="task description" />
+            <column name="created_at" value="now()" />
+            <column name="project_id" value="1" />
+            <column name="priority_id" value="1" />
+            <column name="status_id" value="1" />
+            <column name="start_date" value="now()" />
+        </insert>
+        <insert tableName="task">
+            <column name="name" value="task1.2" />
+            <column name="description" value="task description" />
+            <column name="created_at" value="now()" />
+            <column name="project_id" value="1" />
+            <column name="priority_id" value="2" />
+            <column name="status_id" value="1" />
+            <column name="start_date" value="now()" />
+        </insert>
+        <insert tableName="task">
+            <column name="name" value="task2.1" />
+            <column name="description" value="task description" />
+            <column name="created_at" value="now()" />
+            <column name="project_id" value="2" />
+            <column name="priority_id" value="3" />
+            <column name="status_id" value="1" />
+            <column name="start_date" value="now()" />
+        </insert>
+        <insert tableName="task">
+            <column name="name" value="task2.2" />
+            <column name="description" value="task description" />
+            <column name="created_at" value="now()" />
+            <column name="project_id" value="2" />
+            <column name="priority_id" value="1" />
+            <column name="status_id" value="1" />
+            <column name="start_date" value="now()" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create_1" author="OSDB">
+        <createTable tableName="project">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="name" type="varchar(256)">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="description" type="text" />
+            <column name="created_at" type="datetime" />
+            <column name="updated_at" type="datetime" />
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_2" author="OSDB">
+        <createTable tableName="task">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="name" type="varchar(256)">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="description" type="text" />
+            <column name="created_at" type="datetime" />
+            <column name="updated_at" type="datetime" />
+            <column name="project_id" type="int">
+                <constraints nullable="false" foreignKeyName="fk_task_project"
+                             referencedTableName="project"
+                             referencedColumnNames="id" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_3" author="OSDB">
+        <createTable tableName="task_priority">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="name" type="varchar(128)">
+                <constraints nullable="false" unique="true" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_4" author="OSDB">
+        <addColumn tableName="task">
+            <column name="priority_id" type="int">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="create_5" author="OSDB">
+        <addForeignKeyConstraint baseTableName="task" baseColumnNames="priority_id"
+                                 constraintName="fk_task_priority" referencedTableName="task_priority"
+                                 referencedColumnNames="id" />
+    </changeSet>
+
+    <changeSet id="create_6" author="OSDB">
+        <createTable tableName="task_status">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="name" type="varchar(128)">
+                <constraints nullable="false" unique="true" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_7" author="OSDB">
+        <addColumn tableName="task">
+            <column name="status_id" type="int">
+                <constraints nullable="false" foreignKeyName="fk_task_status"
+                             referencedTableName="task_status"
+                             referencedColumnNames="id" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="create_8" author="OSDB">
+        <addColumn tableName="task">
+            <column name="start_date" type="datetime">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
+    </changeSet>
+    
+    <changeSet id="create_9" author="OSDB">
+        <createTable tableName="user">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="username" type="varchar(256)">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="password" type="varchar(256)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_10" author="OSDB">
+        <createTable tableName="project_user">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="project_id" type="int">
+                <constraints foreignKeyName="fk_project_user"
+                             referencedTableName="project"
+                             referencedColumnNames="id" />
+            </column>
+            <column name="user_id" type="int">
+                <constraints foreignKeyName="fk_user_project"
+                             referencedTableName="user"
+                             referencedColumnNames="id" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="11" author="OSDB">
+        <addColumn tableName="project">
+            <column name="owner_id" type="int">
+                <constraints foreignKeyName="fk_project_owner"
+                             referencedTableName="user"
+                             referencedColumnNames="id" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>
