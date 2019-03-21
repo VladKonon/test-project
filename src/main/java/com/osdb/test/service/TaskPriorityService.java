@@ -1,6 +1,6 @@
 package com.osdb.test.service;
 
-import com.osdb.test.entity.TaskPriority;
+import com.osdb.test.entity.jpa.TaskPriority;
 
 import java.util.List;
 

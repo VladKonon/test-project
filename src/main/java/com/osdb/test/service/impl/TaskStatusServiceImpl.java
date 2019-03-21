@@ -1,6 +1,6 @@
 package com.osdb.test.service.impl;
 
-import com.osdb.test.entity.TaskStatus;
+import com.osdb.test.entity.jpa.TaskStatus;
 import com.osdb.test.repository.TaskStatusRepository;
 import com.osdb.test.service.TaskStatusService;
 import lombok.AccessLevel;

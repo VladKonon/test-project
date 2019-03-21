@@ -1,6 +1,6 @@
 package com.osdb.test.repository;
 
-import com.osdb.test.entity.User;
+import com.osdb.test.entity.jpa.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

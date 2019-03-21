@@ -1,15 +1,15 @@
 package com.osdb.test.controller.response;
 
-import com.osdb.test.controller.dto.ProjectDto;
-import lombok.Builder;
-import lombok.Value;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import java.util.List;
 
-@Value
-@Builder
-public class PageResponse {
+@Data
+@AllArgsConstructor
+public class PageResponse<T> {
 
     Long total;
-    List<ProjectDto> projectDtoList;
+    List<T> result;
+
 }

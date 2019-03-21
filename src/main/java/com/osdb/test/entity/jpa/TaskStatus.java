@@ -1,18 +1,18 @@
-package com.osdb.test.entity;
+package com.osdb.test.entity.jpa;
 
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "task_priority")
+@Table(name = "task_status")
 @Data
-public class TaskPriority {
+public class TaskStatus {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 
     @Column
-    private String name;
+    String name;
 }

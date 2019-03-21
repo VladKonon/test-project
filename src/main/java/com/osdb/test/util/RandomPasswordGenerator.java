@@ -1,16 +1,14 @@
 package com.osdb.test.util;
 
 import org.passay.*;
-import org.springframework.stereotype.Component;
 
-@Component
 public class RandomPasswordGenerator {
 
     private final static String ALLOWED_SPECIAL_CHARACTERS = "!@#$%^&*_+";
     private final static String ERROR_CODE = "Erroneous special char";
     private final static int PASSWORD_LENGTH = 8;
 
-    public String generatePassword() {
+    public static String generatePassword() {
         PasswordGenerator generator = new PasswordGenerator();
 
         CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;

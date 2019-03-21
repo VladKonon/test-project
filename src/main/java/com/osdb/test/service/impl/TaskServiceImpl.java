@@ -1,6 +1,6 @@
 package com.osdb.test.service.impl;
 
-import com.osdb.test.entity.Task;
+import com.osdb.test.entity.jpa.Task;
 import com.osdb.test.exception.NotFoundException;
 import com.osdb.test.repository.TaskRepository;
 import com.osdb.test.service.TaskService;
@@ -31,7 +31,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public Task get(Long taskId, Long projectId) {
+    public Task get(Long projectId, Long taskId) {
         return taskRepository
                 .findByIdAndProjectId(taskId, projectId)
                 .orElseThrow(() -> new NotFoundException(PROJECT_NOT_FOUND));
@@ -43,7 +43,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public Task update(Long taskId, Long projectId, Task taskDetails) {
+    public Task update(Long projectId, Long taskId, Task taskDetails) {
         Task task = get(taskId, projectId);
 
         task.setName(taskDetails.getName());
@@ -68,7 +68,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public void delete(Long taskId, Long projectId) {
+    public void delete(Long projectId, Long taskId) {
         Task task = get(taskId, projectId);
         taskRepository.delete(task);
     }

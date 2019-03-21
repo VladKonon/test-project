@@ -29,7 +29,7 @@ public class AuthController {
     }
 
     @PostMapping("/sign-in")
-    public ResponseEntity signIn(@RequestBody SignInDto signInDto) {
+    public ResponseEntity signIn(@Valid @RequestBody SignInDto signInDto) {
         return ResponseEntity.ok(authFacade.signIn(signInDto));
     }
 

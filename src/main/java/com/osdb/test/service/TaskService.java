@@ -1,6 +1,6 @@
 package com.osdb.test.service;
 
-import com.osdb.test.entity.Task;
+import com.osdb.test.entity.jpa.Task;
 
 import java.util.List;
 

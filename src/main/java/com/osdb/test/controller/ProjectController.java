@@ -31,15 +31,22 @@ public class ProjectController {
             @ApiImplicitParam(name = "size", dataType = "integer", paramType = "query"),
             @ApiImplicitParam(name = "sort", allowMultiple = true, dataType = "string", paramType = "query")
     })
+
+    @GetMapping("/multi_match_search")
+    public ResponseEntity fullTextSearch(String search) {
+        return ResponseEntity.ok(projectFacade.fullTextSearch(search));
+    }
+
+    @GetMapping("/term_search")
+    public ResponseEntity searchByName(String name) {
+        return ResponseEntity.ok(projectFacade.getByName(name));
+    }
+
     @GetMapping
     @ResponseBody
     public PageResponse get(@ApiIgnore Pageable pageable, String search) {
         Page<ProjectDto> pageResult = projectFacade.getAll(pageable, search);
-
-            return PageResponse.builder()
-                    .total(pageResult.getTotalElements())
-                    .projectDtoList(pageResult.getContent())
-                    .build();
+        return new PageResponse<>(pageResult.getTotalElements(), pageResult.getContent());
     }
 
     @GetMapping("/{id}")

@@ -1,6 +1,6 @@
 package com.osdb.test.service.impl;
 
-import com.osdb.test.entity.User;
+import com.osdb.test.entity.jpa.User;
 import com.osdb.test.exception.NotFoundException;
 import com.osdb.test.repository.UserRepository;
 import com.osdb.test.util.EmailUtil;
@@ -19,16 +19,17 @@ import org.springframework.stereotype.Service;
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 public class UserServiceImpl implements UserDetailsService {
 
-    final static String SUBJECT = "New Password";
+    private final static String SUBJECT = "New Password";
 
     UserRepository userRepository;
-    RandomPasswordGenerator passwordGenerator;
     PasswordEncoder passwordEncoder;
     EmailUtil emailUtil;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        return userRepository.findByUsername(s).orElseThrow(() -> new NotFoundException("User not found"));
+        return userRepository
+                .findByUsername(s)
+                .orElseThrow(() -> new NotFoundException("User not found"));
     }
 
     public User save(User user) {
@@ -38,9 +39,11 @@ public class UserServiceImpl implements UserDetailsService {
 
     public void resetPassword(String email) {
         User user = (User) loadUserByUsername(email);
-        String newPassword = passwordGenerator.generatePassword();
+
+        String newPassword = RandomPasswordGenerator.generatePassword();
         user.setPassword(passwordEncoder.encode(newPassword));
         userRepository.save(user);
-        emailUtil.send(email,SUBJECT, newPassword);
+
+        emailUtil.send(email, SUBJECT, newPassword);
     }
 }

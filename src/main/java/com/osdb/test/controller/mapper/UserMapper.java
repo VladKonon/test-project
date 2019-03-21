@@ -1,7 +1,7 @@
 package com.osdb.test.controller.mapper;
 
 import com.osdb.test.controller.dto.UserDto;
-import com.osdb.test.entity.User;
+import com.osdb.test.entity.jpa.User;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

@@ -1,6 +1,6 @@
 package com.osdb.test.service.impl;
 
-import com.osdb.test.entity.Project;
+import com.osdb.test.entity.jpa.Project;
 import com.osdb.test.exception.NotFoundException;
 import com.osdb.test.service.filter.ProjectSpecification;
 import com.osdb.test.service.filter.SearchCriteria;

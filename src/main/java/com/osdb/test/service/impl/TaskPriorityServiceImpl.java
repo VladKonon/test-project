@@ -1,6 +1,6 @@
 package com.osdb.test.service.impl;
 
-import com.osdb.test.entity.TaskPriority;
+import com.osdb.test.entity.jpa.TaskPriority;
 import com.osdb.test.repository.TaskPriorityRepository;
 import com.osdb.test.service.TaskPriorityService;
 import lombok.AccessLevel;

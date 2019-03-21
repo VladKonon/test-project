@@ -1,6 +1,6 @@
 package com.osdb.test.repository;
 
-import com.osdb.test.entity.Task;
+import com.osdb.test.entity.jpa.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

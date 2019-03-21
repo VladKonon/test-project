@@ -8,6 +8,8 @@ import lombok.Value;
 public class SearchCriteria {
 
     String key;
+
     String operation;
+
     String value;
 }

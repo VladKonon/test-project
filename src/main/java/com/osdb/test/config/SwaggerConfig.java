@@ -28,6 +28,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
+
     @Bean
     public Docket productApi() {
         List<ResponseMessage> defaultServerErrorResponse = createDefaultServerErrorResponses();

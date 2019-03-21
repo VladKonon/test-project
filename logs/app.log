@@ -1,0 +1,364 @@
+21-03-2019 13:41:01.123 [main] INFO  com.osdb.test.TestApplication.logStarting - Starting TestApplication on Users-MacBook-Pro-5.local with PID 49822 (/Users/user/Documents/Projects/test/target/classes started by user in /Users/user/Documents/Projects/test)
+21-03-2019 13:41:01.137 [main] INFO  com.osdb.test.TestApplication.logStartupProfileInfo - The following profiles are active: dev
+21-03-2019 13:41:02.713 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:41:02.715 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:41:02.781 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectRepository.
+21-03-2019 13:41:02.785 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskPriorityRepository.
+21-03-2019 13:41:02.786 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskRepository.
+21-03-2019 13:41:02.787 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskStatusRepository.
+21-03-2019 13:41:02.789 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.UserRepository.
+21-03-2019 13:41:02.811 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 90ms. Found 2 repository interfaces.
+21-03-2019 13:41:02.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:41:02.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:41:02.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectElasticSearchRepository.
+21-03-2019 13:41:02.839 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskElasticSearchRepository.
+21-03-2019 13:41:02.857 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 33ms. Found 5 repository interfaces.
+21-03-2019 13:41:03.338 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba51554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21-03-2019 13:41:03.750 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+21-03-2019 13:41:03.781 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2019 13:41:03.782 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.14]
+21-03-2019 13:41:03.790 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/user/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-03-2019 13:41:03.912 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2019 13:41:03.912 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2667 ms
+21-03-2019 13:41:04.166 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2019 13:41:04.655 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2019 13:41:05.352 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:41:05.371 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:41:05.373 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT `LOCKED` FROM test.DATABASECHANGELOGLOCK WHERE ID=1
+21-03-2019 13:41:05.436 [main] INFO  l.lockservice.StandardLockService.info - Successfully acquired change log lock
+21-03-2019 13:41:06.654 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT MD5SUM FROM test.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+21-03-2019 13:41:06.663 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOG
+21-03-2019 13:41:06.666 [main] INFO  l.c.StandardChangeLogHistoryService.info - Reading from test.DATABASECHANGELOG
+21-03-2019 13:41:06.667 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT * FROM test.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+21-03-2019 13:41:06.842 [main] INFO  l.lockservice.StandardLockService.info - Successfully released change log lock
+21-03-2019 13:41:07.008 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21-03-2019 13:41:07.110 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+21-03-2019 13:41:07.112 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+21-03-2019 13:41:07.347 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+21-03-2019 13:41:07.546 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21-03-2019 13:41:08.353 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:41:08.875 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForAccessToken
+21-03-2019 13:41:08.875 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForRefreshToken
+21-03-2019 13:41:09.119 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - no modules loaded
+21-03-2019 13:41:09.120 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+21-03-2019 13:41:09.121 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+21-03-2019 13:41:09.121 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+21-03-2019 13:41:09.122 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+21-03-2019 13:41:09.122 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+21-03-2019 13:41:11.397 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectController' defined in file [/Users/user/Documents/Projects/test/target/classes/com/osdb/test/controller/ProjectController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectFacade' defined in file [/Users/user/Documents/Projects/test/target/classes/com/osdb/test/controller/facade/ProjectFacade.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectElasticSearchServiceImpl' defined in file [/Users/user/Documents/Projects/test/target/classes/com/osdb/test/service/impl/ProjectElasticSearchServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.osdb.test.repository.ProjectElasticSearchRepositoryCustom' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21-03-2019 13:41:11.423 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:41:11.426 [main] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2019 13:41:11.467 [main] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2019 13:41:11.469 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+21-03-2019 13:41:11.499 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21-03-2019 13:41:11.751 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.osdb.test.service.impl.ProjectElasticSearchServiceImpl required a bean of type 'com.osdb.test.repository.ProjectElasticSearchRepositoryCustom' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.osdb.test.repository.ProjectElasticSearchRepositoryCustom' in your configuration.
+
+21-03-2019 13:42:07.892 [main] INFO  com.osdb.test.TestApplication.logStarting - Starting TestApplication on Users-MacBook-Pro-5.local with PID 49830 (/Users/user/Documents/Projects/test/target/classes started by user in /Users/user/Documents/Projects/test)
+21-03-2019 13:42:07.897 [main] INFO  com.osdb.test.TestApplication.logStartupProfileInfo - The following profiles are active: dev
+21-03-2019 13:42:09.224 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:42:09.225 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:42:09.275 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectRepository.
+21-03-2019 13:42:09.278 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskPriorityRepository.
+21-03-2019 13:42:09.280 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskRepository.
+21-03-2019 13:42:09.282 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskStatusRepository.
+21-03-2019 13:42:09.283 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.UserRepository.
+21-03-2019 13:42:09.301 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 71ms. Found 2 repository interfaces.
+21-03-2019 13:42:09.308 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:42:09.309 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:42:09.319 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectElasticSearchRepository.
+21-03-2019 13:42:09.323 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskElasticSearchRepository.
+21-03-2019 13:42:09.337 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 27ms. Found 5 repository interfaces.
+21-03-2019 13:42:09.896 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba51554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21-03-2019 13:42:10.352 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+21-03-2019 13:42:10.385 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2019 13:42:10.385 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.14]
+21-03-2019 13:42:10.394 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/user/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-03-2019 13:42:10.526 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2019 13:42:10.526 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2528 ms
+21-03-2019 13:42:10.706 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2019 13:42:11.029 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2019 13:42:11.592 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:42:11.608 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:42:11.610 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT `LOCKED` FROM test.DATABASECHANGELOGLOCK WHERE ID=1
+21-03-2019 13:42:11.694 [main] INFO  l.lockservice.StandardLockService.info - Successfully acquired change log lock
+21-03-2019 13:42:13.004 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT MD5SUM FROM test.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+21-03-2019 13:42:13.007 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOG
+21-03-2019 13:42:13.009 [main] INFO  l.c.StandardChangeLogHistoryService.info - Reading from test.DATABASECHANGELOG
+21-03-2019 13:42:13.009 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT * FROM test.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+21-03-2019 13:42:13.082 [main] INFO  l.lockservice.StandardLockService.info - Successfully released change log lock
+21-03-2019 13:42:13.210 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21-03-2019 13:42:13.303 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+21-03-2019 13:42:13.305 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+21-03-2019 13:42:13.502 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+21-03-2019 13:42:13.652 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21-03-2019 13:42:14.383 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:42:14.797 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForAccessToken
+21-03-2019 13:42:14.797 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForRefreshToken
+21-03-2019 13:42:14.961 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - no modules loaded
+21-03-2019 13:42:14.963 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+21-03-2019 13:42:14.963 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+21-03-2019 13:42:14.963 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+21-03-2019 13:42:14.964 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+21-03-2019 13:42:14.964 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+21-03-2019 13:42:16.811 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2019 13:42:16.984 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21-03-2019 13:42:17.202 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+21-03-2019 13:42:17.749 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63838642, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bbc0c6b, org.springframework.security.web.header.HeaderWriterFilter@2438702, org.springframework.security.web.authentication.logout.LogoutFilter@5e5e680b, com.osdb.test.security.JwtTokenFilter@28bbac99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69c4bbfe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79d72d99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d7e9c4d, org.springframework.security.web.session.SessionManagementFilter@42afbce5, org.springframework.security.web.access.ExceptionTranslationFilter@5191288e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@adeb5a6]
+21-03-2019 13:42:17.810 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+21-03-2019 13:42:17.837 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+21-03-2019 13:42:17.885 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+21-03-2019 13:42:18.099 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_1
+21-03-2019 13:42:18.111 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: createUsingPOST_1
+21-03-2019 13:42:18.113 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+21-03-2019 13:42:18.116 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_2
+21-03-2019 13:42:18.119 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_3
+21-03-2019 13:42:18.121 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: searchByNameUsingGET_1
+21-03-2019 13:42:18.124 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+21-03-2019 13:42:18.128 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_4
+21-03-2019 13:42:18.131 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_5
+21-03-2019 13:42:18.172 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+21-03-2019 13:42:18.175 [main] INFO  com.osdb.test.TestApplication.logStarted - Started TestApplication in 10.999 seconds (JVM running for 12.191)
+21-03-2019 13:42:47.218 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-03-2019 13:42:47.221 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+21-03-2019 13:42:47.258 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 37 ms
+21-03-2019 13:43:54.061 [http-nio-8080-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+21-03-2019 13:43:54.068 [http-nio-8080-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry 'zzzzz' for key 'name'
+21-03-2019 13:46:34.308 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+21-03-2019 13:46:34.348 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:46:34.363 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2019 13:46:34.570 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2019 13:46:43.365 [main] INFO  com.osdb.test.TestApplication.logStarting - Starting TestApplication on Users-MacBook-Pro-5.local with PID 49841 (/Users/user/Documents/Projects/test/target/classes started by user in /Users/user/Documents/Projects/test)
+21-03-2019 13:46:43.372 [main] INFO  com.osdb.test.TestApplication.logStartupProfileInfo - The following profiles are active: dev
+21-03-2019 13:46:44.863 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:46:44.865 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:46:44.917 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectRepository.
+21-03-2019 13:46:44.920 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskPriorityRepository.
+21-03-2019 13:46:44.922 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskRepository.
+21-03-2019 13:46:44.923 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskStatusRepository.
+21-03-2019 13:46:44.925 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.UserRepository.
+21-03-2019 13:46:44.943 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 74ms. Found 2 repository interfaces.
+21-03-2019 13:46:44.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:46:44.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:46:44.966 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectElasticSearchRepository.
+21-03-2019 13:46:44.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskElasticSearchRepository.
+21-03-2019 13:46:45.002 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 47ms. Found 5 repository interfaces.
+21-03-2019 13:46:45.458 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c66e7d9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21-03-2019 13:46:45.899 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+21-03-2019 13:46:45.934 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2019 13:46:45.935 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.14]
+21-03-2019 13:46:45.944 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/user/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-03-2019 13:46:46.065 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2019 13:46:46.065 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2581 ms
+21-03-2019 13:46:46.252 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2019 13:46:46.569 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2019 13:46:47.128 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:46:47.136 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:46:47.139 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT `LOCKED` FROM test.DATABASECHANGELOGLOCK WHERE ID=1
+21-03-2019 13:46:47.237 [main] INFO  l.lockservice.StandardLockService.info - Successfully acquired change log lock
+21-03-2019 13:46:48.346 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT MD5SUM FROM test.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+21-03-2019 13:46:48.350 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOG
+21-03-2019 13:46:48.351 [main] INFO  l.c.StandardChangeLogHistoryService.info - Reading from test.DATABASECHANGELOG
+21-03-2019 13:46:48.352 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT * FROM test.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+21-03-2019 13:46:48.439 [main] INFO  l.lockservice.StandardLockService.info - Successfully released change log lock
+21-03-2019 13:46:48.663 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21-03-2019 13:46:48.739 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+21-03-2019 13:46:48.741 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+21-03-2019 13:46:48.910 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+21-03-2019 13:46:49.061 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21-03-2019 13:46:49.743 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:46:50.196 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForAccessToken
+21-03-2019 13:46:50.196 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForRefreshToken
+21-03-2019 13:46:50.352 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - no modules loaded
+21-03-2019 13:46:50.353 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+21-03-2019 13:46:50.354 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+21-03-2019 13:46:50.354 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+21-03-2019 13:46:50.354 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+21-03-2019 13:46:50.355 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+21-03-2019 13:46:52.021 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2019 13:46:52.170 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21-03-2019 13:46:52.353 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+21-03-2019 13:46:52.863 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17ee816c, org.springframework.security.web.context.SecurityContextPersistenceFilter@77d695f2, org.springframework.security.web.header.HeaderWriterFilter@562998d3, org.springframework.security.web.authentication.logout.LogoutFilter@753aacf, com.osdb.test.security.JwtTokenFilter@1ab2f166, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a26f595, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59250335, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7015b29b, org.springframework.security.web.session.SessionManagementFilter@64010508, org.springframework.security.web.access.ExceptionTranslationFilter@174bbe8e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14f35726]
+21-03-2019 13:46:52.924 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+21-03-2019 13:46:52.947 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+21-03-2019 13:46:52.987 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+21-03-2019 13:46:53.186 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_1
+21-03-2019 13:46:53.198 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: createUsingPOST_1
+21-03-2019 13:46:53.202 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+21-03-2019 13:46:53.205 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_2
+21-03-2019 13:46:53.208 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_3
+21-03-2019 13:46:53.211 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: searchByNameUsingGET_1
+21-03-2019 13:46:53.214 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+21-03-2019 13:46:53.219 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_4
+21-03-2019 13:46:53.221 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_5
+21-03-2019 13:46:53.258 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+21-03-2019 13:46:53.261 [main] INFO  com.osdb.test.TestApplication.logStarted - Started TestApplication in 10.673 seconds (JVM running for 11.824)
+21-03-2019 13:47:20.917 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-03-2019 13:47:20.918 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+21-03-2019 13:47:20.933 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 14 ms
+21-03-2019 13:48:46.622 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+21-03-2019 13:48:46.640 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:48:46.642 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2019 13:48:46.666 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2019 13:58:00.099 [main] INFO  com.osdb.test.TestApplication.logStarting - Starting TestApplication on Users-MacBook-Pro-5.local with PID 49869 (/Users/user/Documents/Projects/test/target/classes started by user in /Users/user/Documents/Projects/test)
+21-03-2019 13:58:00.103 [main] INFO  com.osdb.test.TestApplication.logStartupProfileInfo - The following profiles are active: dev
+21-03-2019 13:58:01.427 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:58:01.429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:58:01.486 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectRepository.
+21-03-2019 13:58:01.489 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskPriorityRepository.
+21-03-2019 13:58:01.491 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskRepository.
+21-03-2019 13:58:01.492 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskStatusRepository.
+21-03-2019 13:58:01.494 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.UserRepository.
+21-03-2019 13:58:01.516 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 82ms. Found 2 repository interfaces.
+21-03-2019 13:58:01.528 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 13:58:01.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 13:58:01.545 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectElasticSearchRepository.
+21-03-2019 13:58:01.549 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskElasticSearchRepository.
+21-03-2019 13:58:01.567 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 34ms. Found 5 repository interfaces.
+21-03-2019 13:58:02.025 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2957df5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21-03-2019 13:58:02.425 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+21-03-2019 13:58:02.457 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2019 13:58:02.457 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.14]
+21-03-2019 13:58:02.466 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/user/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-03-2019 13:58:02.590 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2019 13:58:02.591 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2416 ms
+21-03-2019 13:58:02.799 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2019 13:58:03.174 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2019 13:58:04.026 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:58:04.041 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 13:58:04.044 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT `LOCKED` FROM test.DATABASECHANGELOGLOCK WHERE ID=1
+21-03-2019 13:58:04.116 [main] INFO  l.lockservice.StandardLockService.info - Successfully acquired change log lock
+21-03-2019 13:58:05.451 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT MD5SUM FROM test.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+21-03-2019 13:58:05.455 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOG
+21-03-2019 13:58:05.456 [main] INFO  l.c.StandardChangeLogHistoryService.info - Reading from test.DATABASECHANGELOG
+21-03-2019 13:58:05.457 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT * FROM test.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+21-03-2019 13:58:05.536 [main] INFO  l.lockservice.StandardLockService.info - Successfully released change log lock
+21-03-2019 13:58:05.676 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21-03-2019 13:58:05.789 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+21-03-2019 13:58:05.791 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+21-03-2019 13:58:06.016 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+21-03-2019 13:58:06.218 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21-03-2019 13:58:07.033 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:58:07.481 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForAccessToken
+21-03-2019 13:58:07.481 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForRefreshToken
+21-03-2019 13:58:07.710 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - no modules loaded
+21-03-2019 13:58:07.711 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+21-03-2019 13:58:07.712 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+21-03-2019 13:58:07.712 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+21-03-2019 13:58:07.712 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+21-03-2019 13:58:07.713 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+21-03-2019 13:58:09.490 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2019 13:58:09.679 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21-03-2019 13:58:09.894 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+21-03-2019 13:58:10.423 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2254919b, org.springframework.security.web.context.SecurityContextPersistenceFilter@58decd96, org.springframework.security.web.header.HeaderWriterFilter@483eff43, org.springframework.security.web.authentication.logout.LogoutFilter@4c3d056, com.osdb.test.security.JwtTokenFilter@45354715, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57cc535, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38f20b58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54214c34, org.springframework.security.web.session.SessionManagementFilter@388b4f68, org.springframework.security.web.access.ExceptionTranslationFilter@1bcb2501, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49a2f134]
+21-03-2019 13:58:10.502 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+21-03-2019 13:58:10.530 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+21-03-2019 13:58:10.586 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+21-03-2019 13:58:10.813 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_1
+21-03-2019 13:58:10.825 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: createUsingPOST_1
+21-03-2019 13:58:10.827 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+21-03-2019 13:58:10.832 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_2
+21-03-2019 13:58:10.835 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_3
+21-03-2019 13:58:10.838 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: searchByNameUsingGET_1
+21-03-2019 13:58:10.840 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+21-03-2019 13:58:10.846 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_4
+21-03-2019 13:58:10.848 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_5
+21-03-2019 13:58:10.888 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+21-03-2019 13:58:10.892 [main] INFO  com.osdb.test.TestApplication.logStarted - Started TestApplication in 11.588 seconds (JVM running for 13.387)
+21-03-2019 13:58:13.701 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+21-03-2019 13:58:13.730 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 13:58:13.732 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2019 13:58:13.761 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2019 15:06:40.488 [main] INFO  com.osdb.test.TestApplication.logStarting - Starting TestApplication on Users-MacBook-Pro-5.local with PID 49996 (/Users/user/Documents/Projects/test/target/classes started by user in /Users/user/Documents/Projects/test)
+21-03-2019 15:06:40.494 [main] INFO  com.osdb.test.TestApplication.logStartupProfileInfo - The following profiles are active: dev
+21-03-2019 15:06:41.940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 15:06:41.941 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 15:06:41.994 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectRepository.
+21-03-2019 15:06:41.997 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskPriorityRepository.
+21-03-2019 15:06:41.999 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskRepository.
+21-03-2019 15:06:42.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskStatusRepository.
+21-03-2019 15:06:42.003 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.UserRepository.
+21-03-2019 15:06:42.023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 77ms. Found 2 repository interfaces.
+21-03-2019 15:06:42.033 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+21-03-2019 15:06:42.034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+21-03-2019 15:06:42.046 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.ProjectElasticSearchRepository.
+21-03-2019 15:06:42.050 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.osdb.test.repository.TaskElasticSearchRepository.
+21-03-2019 15:06:42.067 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 31ms. Found 5 repository interfaces.
+21-03-2019 15:06:42.570 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e852f93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21-03-2019 15:06:42.977 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+21-03-2019 15:06:43.011 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2019 15:06:43.012 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.14]
+21-03-2019 15:06:43.020 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/user/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-03-2019 15:06:43.148 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2019 15:06:43.149 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2562 ms
+21-03-2019 15:06:43.335 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2019 15:06:43.727 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2019 15:06:44.350 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 15:06:44.362 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+21-03-2019 15:06:44.364 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT `LOCKED` FROM test.DATABASECHANGELOGLOCK WHERE ID=1
+21-03-2019 15:06:44.405 [main] INFO  l.lockservice.StandardLockService.info - Successfully acquired change log lock
+21-03-2019 15:06:45.540 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT MD5SUM FROM test.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+21-03-2019 15:06:45.547 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT COUNT(*) FROM test.DATABASECHANGELOG
+21-03-2019 15:06:45.548 [main] INFO  l.c.StandardChangeLogHistoryService.info - Reading from test.DATABASECHANGELOG
+21-03-2019 15:06:45.548 [main] INFO  liquibase.executor.jvm.JdbcExecutor.info - SELECT * FROM test.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+21-03-2019 15:06:45.620 [main] INFO  l.lockservice.StandardLockService.info - Successfully released change log lock
+21-03-2019 15:06:45.845 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21-03-2019 15:06:45.943 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+21-03-2019 15:06:45.945 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+21-03-2019 15:06:46.172 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+21-03-2019 15:06:46.356 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21-03-2019 15:06:47.170 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 15:06:47.607 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForAccessToken
+21-03-2019 15:06:47.608 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.lambda$buildAutowiringMetadata$1 - Autowired annotation is not supported on static fields: private static long com.osdb.test.controller.facade.AuthFacade.validityForRefreshToken
+21-03-2019 15:06:47.779 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - no modules loaded
+21-03-2019 15:06:47.780 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+21-03-2019 15:06:47.781 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+21-03-2019 15:06:47.782 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+21-03-2019 15:06:47.782 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+21-03-2019 15:06:47.782 [main] INFO  o.e.plugins.PluginsService.logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+21-03-2019 15:06:49.889 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2019 15:06:50.051 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21-03-2019 15:06:50.249 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+21-03-2019 15:06:50.765 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5496cd02, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fb0867c, org.springframework.security.web.header.HeaderWriterFilter@37c55315, org.springframework.security.web.authentication.logout.LogoutFilter@8b62702, com.osdb.test.security.JwtTokenFilter@700cc0e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45354715, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32c3102, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@746169cd, org.springframework.security.web.session.SessionManagementFilter@5126c400, org.springframework.security.web.access.ExceptionTranslationFilter@346ea2ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36e74495]
+21-03-2019 15:06:50.830 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+21-03-2019 15:06:50.861 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+21-03-2019 15:06:50.906 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+21-03-2019 15:06:51.115 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_1
+21-03-2019 15:06:51.128 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: createUsingPOST_1
+21-03-2019 15:06:51.131 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+21-03-2019 15:06:51.136 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_2
+21-03-2019 15:06:51.140 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_3
+21-03-2019 15:06:51.142 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: searchByNameUsingGET_1
+21-03-2019 15:06:51.145 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+21-03-2019 15:06:51.150 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_4
+21-03-2019 15:06:51.155 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: getUsingGET_5
+21-03-2019 15:06:51.198 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+21-03-2019 15:06:51.202 [main] INFO  com.osdb.test.TestApplication.logStarted - Started TestApplication in 11.619 seconds (JVM running for 13.081)
+21-03-2019 15:07:45.161 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+21-03-2019 15:07:45.181 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2019 15:07:45.183 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2019 15:07:45.209 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.

@@ -1,6 +1,6 @@
 package com.osdb.test.service;
 
-import com.osdb.test.entity.Project;
+import com.osdb.test.entity.jpa.Project;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

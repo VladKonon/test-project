@@ -1,6 +1,6 @@
 package com.osdb.test.service.filter;
 
-import com.osdb.test.entity.Project;
+import com.osdb.test.entity.jpa.Project;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.jpa.domain.Specification;

@@ -6,7 +6,7 @@ import com.osdb.test.controller.dto.SignUpDto;
 import com.osdb.test.controller.dto.UserDto;
 import com.osdb.test.controller.mapper.SignUpMapper;
 import com.osdb.test.controller.mapper.UserMapper;
-import com.osdb.test.entity.User;
+import com.osdb.test.entity.jpa.User;
 import com.osdb.test.exception.JwtTokenValidationException;
 import com.osdb.test.security.JwtTokenProvider;
 import com.osdb.test.service.impl.UserServiceImpl;

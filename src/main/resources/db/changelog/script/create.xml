@@ -33,7 +33,8 @@
             <column name="project_id" type="int">
                 <constraints nullable="false" foreignKeyName="fk_task_project"
                              referencedTableName="project"
-                             referencedColumnNames="id" />
+                             referencedColumnNames="id"
+                             deleteCascade="true" />
             </column>
         </createTable>
     </changeSet>
@@ -133,5 +134,4 @@
             </column>
         </addColumn>
     </changeSet>
-
 </databaseChangeLog>

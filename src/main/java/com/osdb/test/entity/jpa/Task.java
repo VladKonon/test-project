@@ -1,4 +1,4 @@
-package com.osdb.test.entity;
+package com.osdb.test.entity.jpa;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;

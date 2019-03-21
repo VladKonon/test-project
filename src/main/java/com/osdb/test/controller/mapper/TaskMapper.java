@@ -1,7 +1,8 @@
 package com.osdb.test.controller.mapper;
 
 import com.osdb.test.controller.dto.TaskDto;
-import com.osdb.test.entity.Task;
+import com.osdb.test.entity.elasticsearch.ElasticSearchTask;
+import com.osdb.test.entity.jpa.Task;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -38,5 +39,16 @@ public class TaskMapper {
             task.setStatusId(NOT_STARTED);
         }
         return task;
+    }
+
+    public ElasticSearchTask convertToElasticSearchEntity(Task task) {
+        ElasticSearchTask esTask = new ElasticSearchTask();
+
+        esTask.setId(task.getId());
+        esTask.setName(task.getName());
+        esTask.setDescription(task.getDescription());
+        esTask.setProjectId(task.getProjectId());
+
+        return esTask;
     }
 }
